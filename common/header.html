@@ -1,0 +1,12 @@
+<script type="text/discourse-plugin" version="0.8">
+const { iconNode } = require("discourse-common/lib/icon-library");
+
+  api.decorateWidget('home-logo:after', helper => {
+    return helper.h('a.custom-header-text', {
+      href:'https://discourse.digitalhealth.net/',
+      title: 'Home'
+    },
+    iconNode('home'));
+  });
+  
+</script>
